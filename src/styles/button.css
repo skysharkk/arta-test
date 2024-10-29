@@ -1,0 +1,42 @@
+.button {
+  width: 100%;
+  min-height: 56px;
+  height: 56px;
+  display: inline-flex;
+  padding: 4px 16px;
+  justify-items: center;
+  align-items: center;
+  border-radius: 56px;
+  border: none;
+  background-color: #fff;
+  overflow: hidden;
+  vertical-align: top;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+
+.button span {
+  line-height: 1.715em;
+  width: 100%;
+  font-size: 1.25rem;
+  color: #070B33;
+  text-align: center;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #cacaca;
+  transition: all 0.4s;
+}
+
+.button_disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.button_disabled:hover {
+  background-color: #fff;
+  transition: none;
+}

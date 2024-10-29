@@ -1,0 +1,114 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #FFF;
+  margin: 16px 0;
+}
+
+.offers__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #222129;
+  height: 56px;
+  border-radius: 56px;
+  padding: 0 24px;
+  line-height: 1.2;
+  z-index: 1;
+  border: 1px solid #222129;
+  transition: all 0.4s;
+}
+
+.offers__item .offers__item-left-section {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px
+}
+
+html[lang="de"] .offers__item-left-section {
+  min-width: 205px
+}
+
+.offers__item .offers__item-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+html[lang="de"] .offers__item .offers__item-title {
+  font-size: 0.9rem;
+}
+html[lang="fr"] .offers__item .offers__item-title {
+  font-size: 0.9rem;
+}
+
+.offers__item .offers__item-caption {
+  opacity: 0.7;
+}
+
+.offers__item .offers__item-price {
+  opacity: 0.7;
+  line-height: 1;
+}
+
+html[lang="de"] .offers__item .offers__item-caption {
+  font-size: 0.9rem;
+}
+html[lang="de"] .offers__item .offers__item-price {
+  font-size: 0.9rem;
+}
+
+html[lang="fr"] .offers__item .offers__item-caption {
+  font-size: 0.9rem;
+}
+html[lang="fr"] .offers__item .offers__item-price {
+  font-size: 0.9rem;
+}
+
+.offers__item.offers__item_selected {
+  border: 1px solid #FFF;
+  background-color: #55535C;
+}
+
+.offers__item .offers__item-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -10px;
+  right: 24px;
+  background: linear-gradient(to left, #0035ff 0%, #bc1fef 100%);
+  height: 20px;
+  color: #FFF;
+  background-clip: padding-box;
+  border: solid 1px transparent;
+  border-radius: 20px;
+  padding: 2px 22px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: color 0.4s;
+}
+
+.offers__item .offers__item-badge:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #FF96F4 0%, #632AF7 47%,#00B5FF 100%);
+}
+
+.offers__item.offers__item_selected .offers__item-badge {
+  background: #FFF;
+  color: #141131;
+}
+
+.offers__item.offers__item_selected .offers__item-badge:before {
+  background: #FFF;
+}
+
+

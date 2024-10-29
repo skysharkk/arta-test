@@ -1,14 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arta</title>
-  </head>
-  <body>
-    <main>
-  
-    </main>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#080A10">
+  <title>Arta</title>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <div class="header">
+        <a class="close-btn">
+          <svg width="14" height="14" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="Cross" fill-rule="evenodd" clip-rule="evenodd" d="M10.5158 9.89951L18.6248 1.79052L19.2216 2.38732L11.1126 10.4963L19.5 18.8837L18.8837 19.5L10.4963 11.1126L2.38732 19.2216L1.79052 18.6248L9.89951 10.5158L1.5 2.11628L2.11628 1.5L10.5158 9.89951Z" stroke="white" stroke-opacity="0.4" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="main-content">
+        <h1 class="main-content__title" data-lang="Get Unlimited <br>Access">Get Unlimited <br>Access</h1>
+        <ul class="cards">
+          <li class="cards__item cards__item_bg1">
+            <span data-lang="Unlimited Art <br>Creation">
+              Unlimited Art <br>Creation
+            </span>
+          </li>
+          <li class="cards__item cards__item_bg2">
+            <span data-lang="Exclusive <br>Styles">
+              Exclusive <br>Styles
+            </span>
+          </li>
+          <li class="cards__item cards__item_bg3">
+            <span data-lang="Magic Avatars <br>With 20% Off">
+              Magic Avatars <br>With 20% Off
+            </span>
+          </li>
+        </ul>
+        <div role="list" class="offers">
+          <div role="listitem" aria-label="1" class="offers__item" tabindex="0">
+            <div class="offers__item-badge">
+              <span data-lang="BEST OFFER" class="offers__item-badge-text">
+                BEST OFFER
+              </span>
+            </div>
+            <div class="offers__item-left-section">
+              <span data-lang="YEARLY ACCESS" class="offers__item-title">
+                YEARLY ACCESS
+              </span>
+              <span data-lang="Just {{price}} per year" data-price="39.99" class="offers__item-caption">
+                Just $39.99 per year
+              </span>
+            </div>
+            <span data-lang="{{price}} <br>per week" data-price="0.48" class="offers__item-price">
+              $0.48 <br>per week
+            </span>
+          </div>
+          <div role="listitem" aria-label="2" class="offers__item" tabindex="0">
+            <div class="offers__item-left-section">
+              <span data-lang="WEEKLY ACCESS" class="offers__item-title">
+                WEEKLY ACCESS
+              </span>
+            </div>
+            <span data-lang="{{price}} <br>per week" data-price="6.99" class="offers__item-price">
+              $6.99 <br>per week
+            </span>
+          </div>
+        </div>
+        <a href="#" class="button button_disabled">
+          <span data-lang="Continue">Continue</span>
+        </a>
+        <ul class="links">
+          <li class="links__item">
+            <a data-lang="Terms of Use" href="#">
+              Terms of Use
+            </a>
+          </li>
+          <li  class="links__item">
+            <a data-lang="Privacy Policy" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="links__item">
+            <a data-lang="Restore" href="#">
+              Restore
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
 </html>
