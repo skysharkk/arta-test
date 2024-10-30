@@ -1,17 +1,17 @@
 html {
   min-height: calc(100% + env(safe-area-inset-top));
-  background-image: url("/bg.png");
+  background-image: url("/bg.jpg");
   background-attachment: fixed;
   background-position: center 20%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   @media (min-resolution: 2dppx) {
-    background-image: url("/bg@2x.png");
+    background-image: url("/bg@2x.jpg");
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("/bg@3x.png");
+    background-image: url("/bg@3x.jpg");
   }
 }
 

@@ -21,38 +21,38 @@
 }
 
 .cards__item.cards__item_bg1 {
-  background-image: url("/card-1.png");
+  background-image: url("/card-1.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/card-1@2x.png");
+    background-image: url("/card-1@2x.jpg");
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("/card-1@3x.png");
+    background-image: url("/card-1@3x.jpg");
   }
 }
 
 .cards__item.cards__item_bg2 {
-  background-image: url("/card-2.png");
+  background-image: url("/card-2.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/card-2@2x.png");
+    background-image: url("/card-2@2x.jpg");
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("/card-2@3x.png");
+    background-image: url("/card-2@3x.jpg");
   }
 }
 
 .cards__item.cards__item_bg3 {
-  background-image: url("/card-3.png");
+  background-image: url("/card-3.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/card-3@2x.png");
+    background-image: url("/card-3@2x.jpg");
   }
 
   @media (min-resolution: 3dppx) {
-    background-image: url("/card-3@3x.png");
+    background-image: url("/card-3@3x.jpg");
   }
 }
 
