@@ -30,13 +30,3 @@
   background-color: #cacaca;
   transition: all 0.4s;
 }
-
-.button_disabled {
-	opacity: 0.5;
-	cursor: not-allowed;
-}
-
-.button_disabled:hover {
-  background-color: #fff;
-  transition: none;
-}

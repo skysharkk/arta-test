@@ -1,22 +1,20 @@
-
-let link;
-export const initButton = (offerItems, btn) => {
+const selectItem = (offerItem, btn) => {
   const links = [
     'https://apple.com',
     'https://google.com',
   ];
-  offerItems.forEach((item) => {
-    item.addEventListener('click', (event) =>{
-      offerItems.forEach(item => item.classList.remove('offers__item_selected'));
-      link = links[event.currentTarget.getAttribute('aria-label') - 1];
-      event.currentTarget.classList.add('offers__item_selected');
-      btn.classList.remove('button_disabled');
-    });
-  });
+  btn.href = links[offerItem.getAttribute('aria-label') - 1];
+  offerItem.classList.add('offers__item_selected');
+}
 
-  btn.addEventListener('click', () => {
-    if(link) {
-      btn.href = link;
-    }
+export const initButton = (offerItems, btn) => {
+  const [ firstOffer ] = offerItems;
+  selectItem(firstOffer, btn);
+
+  offerItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+      offerItems.forEach(item => item.classList.remove('offers__item_selected'));
+      selectItem(event.currentTarget, btn);
+    });
   });
 }
